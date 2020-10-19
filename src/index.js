@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import Lakes from './components/lakes'
 import { Hello } from './components/hello'
+import UsingHooks from './components/using-hooks'
+import { UsingEffects, GitHubUser} from './components/using-effects';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -53,6 +55,21 @@ ReactDOM.render(
   <Hello library="Something Else" message="Enjoy" />,
   document.getElementById("props")
 );
+
+ReactDOM.render(
+  <UsingHooks />,
+  document.getElementById('using-hooks')
+)
+
+ReactDOM.render(
+  <UsingEffects />,
+  document.getElementById('using-effects')
+)
+
+ReactDOM.render(
+  <GitHubUser login="chickenlipnerd" />,
+  document.getElementById('github-user-effect')
+)
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
