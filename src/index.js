@@ -7,6 +7,7 @@ import { Hello } from './components/hello'
 import UsingHooks from './components/using-hooks'
 import { UsingEffects, GitHubUser} from './components/using-effects';
 import * as serviceWorker from './serviceWorker';
+import UsingReducer from './components/using-reducer';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -64,6 +65,11 @@ ReactDOM.render(
 ReactDOM.render(
   <UsingEffects />,
   document.getElementById('using-effects')
+)
+
+ReactDOM.render(
+  <UsingReducer />,
+  document.getElementById('using-reducers')
 )
 
 ReactDOM.render(
